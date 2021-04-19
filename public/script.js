@@ -225,3 +225,36 @@ function toggleBookData() {
     bookData.style.display = "block";
   }
 }
+
+
+
+function UpdateFootballData(e) {
+  e.preventDefault();
+	var updatedFootball = {};
+	 document.getElementById("_id").value = editItem["_id"];
+    updatedFootball.id = document.getElementById("fullname").value; 
+    updatedFootball.id = document.getElementById("mail").value; 
+    updatedFootball.id = document.getElementById("age").value; 
+    updatedFootball.id = document.getElementById("years").value;   
+    updatedFootball.id = document.getElementById("favplayer").value; 
+    updatedFootball.id = document.getElementById("club").value; 
+    updatedFootball.id = document.getElementById("otherclubvalue").value; 
+      
+	
+	$.ajax({
+      type: 'POST',
+      url: "/data/update",
+      data: updatedFootball,
+      cache: false,
+      dataType : 'json',
+      success: function (data) {
+        console.log("success");
+      },
+      error: function (xhr) {
+        console.error("Error in post", xhr);
+      },
+      complete: function () {
+        console.log("Complete");  
+      }
+    });
+}
