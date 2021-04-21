@@ -232,7 +232,7 @@ function UpdateData(e) {
   var updatedBook = {};
   updatedBook.id = document.getElementById("_id").value;
   updatedBook.title = document.getElementById("title").value;
-updatedBook.title = document.getElementById("fullname").value;					    ;
+  updatedBook.title = document.getElementById("fullname").value;					    ;
   updatedBook.author = document.getElementById("author").value;
   updatedBook.colour = document.getElementById("colour").value;
   updatedBook.covertype = document.getElementById("covertype").value;
@@ -276,7 +276,7 @@ updatedBook.title = document.getElementById("fullname").value;					    ;
 function UpdateFootballData(e) {
   e.preventDefault();
   var updatedFootball = {};
-  updatedFootball.id = document.getElementById("_id").value;
+    updatedFootball.id = document.getElementById("_id").value;
     updatedFootball.fullname = document.getElementById("fullname").value;
     updatedFootball.mail = document.getElementById("mail").value; 
     updatedFootball.age = document.getElementById("age").value;
