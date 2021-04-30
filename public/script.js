@@ -1,3 +1,4 @@
+
 var loadedData = [];
 
 function loadEditItem() {
@@ -129,14 +130,11 @@ function loadExistingData() {
               myFootballData.push(elem);
             } else {
               myBookData.push(elem);
-            }
-          } else {
-            otherData.push(elem);
+           }
           }
         })
         displayData(myFootballData, "footballDataContainer");
         displayData(myBookData, "bookDataContainer");
-        displayData(otherData, "otherDataContainer");
       },
       error : function(data) {
           console.log("Error")
