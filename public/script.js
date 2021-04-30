@@ -119,7 +119,7 @@ function loadExistingData() {
   myBookData = [];
   otherData = [];
   $.ajax({
-      type : "GET",
+     type : "GET",
       url : "https://cse120-2021-api-tatevik.herokuapp.com/data",
       dataType : "json",
       success : function(data) {
@@ -130,11 +130,14 @@ function loadExistingData() {
               myFootballData.push(elem);
             } else {
               myBookData.push(elem);
-           }
+            }
+          } else {
+            otherData.push(elem);
           }
         })
         displayData(myFootballData, "footballDataContainer");
         displayData(myBookData, "bookDataContainer");
+        displayData(otherData, "otherDataContainer");
       },
       error : function(data) {
           console.log("Error")
