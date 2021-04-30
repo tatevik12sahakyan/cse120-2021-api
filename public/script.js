@@ -291,7 +291,7 @@ function UpdateFootballData(e) {
       $.ajax({
       type: 'POST',
       url: "/data/update",
-      data: updatedFootball
+      data: updatedFootball,
       cache: false,
       dataType : 'json',
       success: function (data) {
