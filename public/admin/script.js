@@ -279,6 +279,7 @@ function updateFootballData(e) {
     updatedFootball.id = document.getElementById("_id").value;
     updatedFootball.fullname = document.getElementById("fullname").value;
     updatedFootball.mail = document.getElementById("mail").value; 
+    updatedFootball.date = document.getElementById("date").value;
     updatedFootball.age = document.getElementById("age").value;
     updatedFootball.years = document.getElementById("years").value;   
     updatedFootball.favplayer = document.getElementById("favplayer").value;
