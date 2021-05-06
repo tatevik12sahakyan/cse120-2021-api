@@ -1,4 +1,3 @@
-
 var loadedData = [];
 
 function loadEditItem() {
