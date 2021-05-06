@@ -33,7 +33,8 @@ function loadFootballEditItem() {
     console.log(editItem);
     document.getElementById("_id").value = editItem["_id"];
     document.getElementById("fullname").value = editItem["fullname"];
-    document.getElementById("mail").value = editItem["mail"]; 
+    document.getElementById("mail").value = editItem["mail"];
+    document.getElementById("date").value = editItem["date"];
     document.getElementById("age").value = editItem["age"];
     document.getElementById("years").value = editItem["years"];   
     document.getElementById("favplayer").value = editItem["favplayer"];
