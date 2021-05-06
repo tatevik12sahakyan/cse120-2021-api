@@ -1,3 +1,4 @@
+
 var loadedData = [];
 
 function loadEditItem() {
@@ -118,7 +119,7 @@ function loadExistingData() {
   myBookData = [];
   otherData = [];
   $.ajax({
-      type : "GET",
+     type : "GET",
       url : "https://cse120-2021-api-tatevik.herokuapp.com/data",
       dataType : "json",
       success : function(data) {
@@ -224,4 +225,84 @@ function toggleBookData() {
   } else {
     bookData.style.display = "block";
   }
+}
+
+
+function UpdateData(e) {
+  e.preventDefault();
+  var updatedBook = {};
+  updatedBook.id = document.getElementById("_id").value;
+  updatedBook.title = document.getElementById("title").value;
+  updatedBook.title = document.getElementById("fullname").value;					    ;
+  updatedBook.author = document.getElementById("author").value;
+  updatedBook.colour = document.getElementById("colour").value;
+  updatedBook.covertype = document.getElementById("covertype").value;
+  updatedBook.othercovervalue = document.getElementById("othercovervalue").value;
+  updatedBook.nofpages = document.getElementById("nofpages").value;
+  updatedBook.price = document.getElementById("price").value;
+  updatedBook.currency = document.getElementById("currency").value;
+  updatedBook.language = document.getElementById("language").value;	
+  updatedBook.otherlanguagevalue = document.getElementById("otherlanguagevalue").value;	
+  updatedBook.orglanguage = document.getElementById("orglanguage").value;	
+  updatedBook.otherorglanguagevalue = document.getElementById("otherorglanguagevalue").value;	
+  updatedBook.edition = document.getElementById("edition").value;	
+  updatedBook.dimensions = document.getElementById("dimensions").value;	
+  updatedBook.publisher = document.getElementById("publisher").value;	
+  updatedBook.date = document.getElementById("date").value;	
+  updatedBook.orgdate = document.getElementById("orgdate").value;	
+  updatedBook.genre = document.getElementById("genre").value;	
+  updatedBook.agerestr = document.getElementById("agerestr").value;	
+	
+	
+	
+      $.ajax({
+      type: 'POST',
+      url: "/data/update",
+      data: updatedBook,
+      cache: false,
+      dataType : 'json',
+      success: function (data) {
+        console.log("success");
+      },
+      error: function (xhr) {
+        console.error("Error in post", xhr);
+      },
+      complete: function () {
+        console.log("Complete");  
+      }
+    });
+}
+
+
+function UpdateFootballData(e) {
+  e.preventDefault();
+  var updatedFootball = {};
+    updatedFootball.id = document.getElementById("_id").value;
+    updatedFootball.fullname = document.getElementById("fullname").value;
+    updatedFootball.mail = document.getElementById("mail").value; 
+    updatedFootball.age = document.getElementById("age").value;
+    updatedFootball.years = document.getElementById("years").value;   
+    updatedFootball.favplayer = document.getElementById("favplayer").value;
+    updatedFootball.club = document.getElementById("club").value;
+    updatedFootball.otherclubvalue = document.getElmentById("otherclubvalue").value; 
+      
+	
+	
+	
+      $.ajax({
+      type: 'POST',
+      url: "/data/update",
+      data: updatedFootball,
+      cache: false,
+      dataType : 'json',
+      success: function (data) {
+        console.log("success");
+      },
+      error: function (xhr) {
+        console.error("Error in post", xhr);
+      },
+      complete: function () {
+        console.log("Complete");  
+      }
+    });
 }
