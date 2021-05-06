@@ -227,7 +227,7 @@ function toggleBookData() {
 }
 
 
-function UpdateData(e) {
+function updateData(e) {
   e.preventDefault();
   var updatedBook = {};
   updatedBook.id = document.getElementById("_id").value;
@@ -273,7 +273,7 @@ function UpdateData(e) {
 }
 
 
-function UpdateFootballData(e) {
+function updateFootballData(e) {
   e.preventDefault();
   var updatedFootball = {};
     updatedFootball.id = document.getElementById("_id").value;
