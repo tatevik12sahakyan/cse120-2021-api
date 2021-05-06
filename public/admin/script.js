@@ -232,7 +232,7 @@ function updateData(e) {
   var updatedBook = {};
   updatedBook.id = document.getElementById("_id").value;
   updatedBook.title = document.getElementById("title").value;
-  updatedBook.title = document.getElementById("fullname").value;					    ;
+  updatedBook.title = document.getElementById("fullname").value;					    
   updatedBook.author = document.getElementById("author").value;
   updatedBook.colour = document.getElementById("colour").value;
   updatedBook.covertype = document.getElementById("covertype").value;
