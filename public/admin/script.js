@@ -40,7 +40,6 @@ function loadFootballEditItem() {
     document.getElementById("favplayer").value = editItem["favplayer"];
     document.getElementById("club").value = editItem["club"];
     document.getElementById("otherclubvalue").value = editItem["otherclubvalue"]; 
-      
 }
 
 function editData(id) {
