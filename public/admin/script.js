@@ -284,7 +284,7 @@ function updateFootballData(e) {
     updatedFootball.years = document.getElementById("years").value;   
     updatedFootball.favplayer = document.getElementById("favplayer").value;
     updatedFootball.club = document.getElementById("club").value;
-    updatedFootball.otherclubvalue = document.getElmentById("otherclubvalue").value; 
+    updatedFootball.otherclubvalue = document.getElementById("otherclubvalue").value; 
       
 	
 	
