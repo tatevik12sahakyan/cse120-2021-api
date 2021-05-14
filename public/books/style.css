@@ -1,9 +1,85 @@
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #E7E8FA;
+}
+
+span {
+  color: red;
+}
+
+fieldset {
+ margin: auto;
+ text-align: center;
+ font-size: 18px;
+ border: 3px solid Brown;
+ width:450px
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:500px;
+  height:200px;
+}
+
+input[type="text" i] {
+  color: black;
+  border: none;
+  margin: 37px;
+  border-bottom: 2px solid rgb(211, 208, 208);
+  font-size: 17px;
+}
+
+div {
+ margin: auto;
+ text-align: center;
+ font-size: 18px;
+ border: 3px solid Brown;
+ width:450px;
+ border-radius: 20px;
+ background: rgb(255, 255, 255);
+}
+
+div.div-form {
+  margin-bottom: 12px;
+  border-radius: 20px 20px;
+}
+
+#othercovertype {
+  display: none;
+  margin: auto;
+}
+
+#otherlanguage {
+  display: none;
+  margin: auto;
+}
+
+#otherorglanguage {
+  display: none;
+  margin: auto;
+}
+
+#Submit {
+  background-color: rgb(186,85,211);
+  border: none;
+  border-radius: 10px 10px;
+  padding: 15px;
+  font-size: 15px;
+  color: white;
+  text-align: center
+}
+
+.backButton {
+  background-color: rgb(186,85,211);
+  border: none;
+  border-radius: 10px 10px;
+  padding: 15px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
 }
