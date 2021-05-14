@@ -12,9 +12,9 @@ body{
  
 }
 div.item {
-	min-width: 150px;
+	min-width: 200px;
 	width: 20%;
-	height: 350px;
+	height: 500px;
 	background-color: rgb(215, 242, 250) ;
   	float: left;
 	margin: 15px;
