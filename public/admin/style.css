@@ -1,14 +1,28 @@
+body{
+  font-family: Cursive;
+  text-shadow: 3px 3px 3px  rgba(27, 1, 94, 0.473);
+  background-image: url(https://www.sciencenews.org/wp-content/uploads/2021/03/032221_ec_constellations_feat-1030x580.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  color: rgb(252, 223, 165);
+ 
+}
 div.item {
 	min-width: 150px;
 	width: 20%;
 	height: 350px;
 	background-color: rgb(215, 242, 250) ;
-  float: left;
+  	float: left;
 	margin: 15px;
 	padding: 15px;
 	position: relative;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 10px;
+  	border: 2px solid rgb(0, 0, 0);
+  	border-radius: 10px;
+	text-align: center;
 }
 
 #footballDataContainer div.item {
@@ -52,4 +66,22 @@ span.item b {
 
 span.undefined {
 	color: red;
+}
+
+.backButton {
+  background-color: rgb(152,152,152);
+  border: none;
+  border-radius: 10px 10px;
+  padding: 15px;
+  font-size: 15px;
+  color: rgb(252, 223, 165);
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+h1 {
+ font-size: 30pt;
+ padding-top: 20px;
 }
